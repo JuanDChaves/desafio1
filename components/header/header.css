@@ -1,0 +1,78 @@
+* {
+  box-sizing: border-box;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; 
+  padding: 20px; 
+  position: relative;
+}
+
+.header__menu-icon {
+  font-size: 30px;
+  color: salmon;
+}
+
+/* 1024 o 768 ? */
+
+@media (min-width: 768px) {
+  .header__menu-icon {
+    display: none;
+  }
+}
+
+.header__menu-mobile {
+  position: absolute;
+  background-color: white;
+  padding: 30px;
+  border: solid 2px #444;
+  left: 12px;
+  right: 12px;
+  top: 100%;
+  display: none;
+}
+
+.header__menu-mobile.show {
+  display: initial;
+} 
+
+.header__menu-mobile ul {
+  list-style: none;
+}
+
+.header__menu-mobile-link {
+  /* seria chevere que cambiara de color con hover */
+}
+
+.header__menu-desktop {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .header__menu-desktop {
+    display: initial;
+  }
+}
+
+.header__menu-desktop ul {
+  list-style: none
+}
+
+.header__menu-desktop ul li{
+  display: inline;
+}
+
+.header__menu-desktop ul li a{
+  text-decoration: none;
+}
+
+.header__button-desktop {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .header__button-desktop {
+    display: initial;
+  }
+}
