@@ -1,3 +1,22 @@
 * {
   box-sizing: border-box;
 }
+
+section {
+  border: solid 1px #999;
+}
+.home-hero {
+  background-color: lightgray;
+}
+
+.contact-me {
+  background-color: lightpink;
+}
+
+.contact-form{
+  background-color: lightpink;
+}
+.header__menu-desktop{
+  text-decoration: none;
+  font-family: sans-serif;
+}

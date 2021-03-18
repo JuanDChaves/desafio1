@@ -41,9 +41,9 @@
   list-style: none;
 }
 
-.header__menu-mobile-link {
-  /* seria chevere que cambiara de color con hover */
-}
+/* .header__menu-mobile-link {
+  /* seria chevere que cambiara de color con hover
+} */
 
 .header__menu-desktop {
   display: none;
@@ -75,4 +75,12 @@
   .header__button-desktop {
     display: initial;
   }
+}
+
+.desktop-menu-link {
+  font-family: sans-serif;
+}
+
+.mobile-menu-link {
+  font-family: sans-serif;
 }
