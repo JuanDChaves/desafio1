@@ -1,7 +1,7 @@
 * {
   box-sizing: border-box;
 }
-.header {
+/* .header {
   display: flex;
   justify-content: space-between;
   align-items: center; 
@@ -22,7 +22,7 @@
   }
 }
 
-.header__menu-mobile {
+/* .header__menu-mobile {
   position: absolute;
   background-color: white;
   padding: 30px;
@@ -39,13 +39,13 @@
 
 .header__menu-mobile ul {
   list-style: none;
-}
+} */
 
 /* .header__menu-mobile-link {
   /* seria chevere que cambiara de color con hover
 } */
 
-.header__menu-desktop {
+/* .header__menu-desktop {
   display: none;
 }
 
@@ -83,4 +83,4 @@
 
 .mobile-menu-link {
   font-family: sans-serif;
-}
+} */

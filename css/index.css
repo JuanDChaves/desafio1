@@ -2,21 +2,294 @@
   box-sizing: border-box;
 }
 
-section {
-  border: solid 1px #999;
+/* Header */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  position: relative;
 }
+
+.header__menu-icon {
+  font-size: 30px;
+  color: salmon;
+}
+
+/* 1024 o 768 ? */
+
+@media (min-width: 768px) {
+  .header__menu-icon {
+    display: none;
+  }
+}
+
+.header__menu-mobile {
+  position: absolute;
+  background-color: white;
+  padding: 30px;
+  border: solid 2px #444;
+  left: 12px;
+  right: 12px;
+  top: 100%;
+  display: none;
+}
+
+.header__menu-mobile.show {
+  display: initial;
+}
+
+.header__menu-mobile ul {
+  list-style: none;
+}
+
+/* .header__menu-mobile-link {
+  /* seria chevere que cambiara de color con hover
+} */
+
+.header__menu-desktop {
+  display: none;
+  font-family: "Rubik", sans-serif;
+  font-weight: bold;
+}
+
+@media (min-width: 768px) {
+  .header__menu-desktop {
+    display: initial;
+  }
+}
+
+.header__menu-desktop ul {
+  list-style: none;
+}
+
+.header__menu-desktop ul li {
+  display: inline;
+}
+
+.header__menu-desktop ul li a {
+  text-decoration: none;
+  color: #002d5b;
+}
+
+.header__button-desktop {
+  display: none;
+  border: none;
+  padding: 15px 30px;
+  background-color: #eb5c52;
+  border-radius: 7px;
+  font-size: 15px;
+  color: white;
+}
+
+@media (min-width: 768px) {
+  .header__button-desktop {
+    display: initial;
+  }
+}
+
+.desktop-menu-link {
+  font-family: sans-serif;
+}
+
+.mobile-menu-link {
+  font-family: sans-serif;
+}
+
+/* Hero */
+
 .home-hero {
-  background-color: lightgray;
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+  background-color: #e1e5e8;
+  font-family: "Rubik", sans-serif;
+  color: #002d5b;
 }
+.title__home-hero {
+  font-family: "Vollkorn", serif;
+  font-size: 3em;
+}
+.motto__home-hero {
+  color: #eb5c52;
+}
+.learn-more-button {
+  border: none;
+  padding: 15px 30px;
+  background-color: #eb5c52;
+  border-radius: 7px;
+  font-size: 15px;
+  color: white;
+}
+.hire-me-button {
+  border: solid 1px #eb5c52;
+  padding: 15px 30px;
+  background-color: #e1e5e8;
+  border-radius: 7px;
+  font-size: 15px;
+  color: #002d5b;
+}
+.buttons__hero {
+  padding: 10px;
+  display: flex;
+  justify-content: space-evenly;
+}
+.harris-image {
+  border: solid 1px #777;
+}
+
+/* about */
+
+.mission {
+  font-family: "Rubik", sans-serif;
+  color: #002d5b;
+  padding: 20px;
+}
+.title__aboutme-mission {
+  font-family: "Vollkorn", serif;
+}
+.title__contact-mission {
+  font-family: "Vollkorn", serif;
+}
+/* services */
+
+.services {
+  font-family: "Rubik", sans-serif;
+  color: #002d5b;
+  padding: 20px;
+}
+.title__services {
+  font-family: "Vollkorn", serif;
+}
+.cards__services {
+  display: flex;
+}
+.service-card {
+  border: solid 1px #e1e5e8;
+}
+.card-title {
+  font-family: "Vollkorn", serif;
+}
+
+/* portfolio */
+.portfolio {
+  font-family: "Rubik", sans-serif;
+  color: #002d5b;
+  padding: 20px;
+}
+.title__porfolio {
+  font-family: "Vollkorn", serif;
+}
+.gallery {
+  display: grid;
+}
+.picture__portfolio {
+  border: solid 1px #e1e5e8;
+}
+
+/* contact */
 
 .contact-me {
-  background-color: lightpink;
+  background-color: #fff3f4;
+  color: #eb5c52;
+  padding: 20px;
+}
+.button__contact-me {
+  border: none;
+  padding: 15px 30px;
+  background-color: #eb5c52;
+  border-radius: 7px;
+  font-size: 15px;
+  color: white;
 }
 
-.contact-form{
-  background-color: lightpink;
+/* Feedback */
+.feedback {
+  font-family: "Rubik", sans-serif;
+  color: #002d5b;
+  padding: 20px;
 }
-.header__menu-desktop{
+.title__feedback {
+  font-family: "Vollkorn", serif;
+}
+.feedback-card {
+  border: solid 1px #e1e5e8;
+}
+
+/* Endorsments */
+
+.endorsments {
+  display: flex;
+  padding: 20px;
+}
+
+/* Contact Form */
+
+.contact-form {
+  font-family: "Rubik", sans-serif;
+  background-color: #fff3f4;
+  color: #002d5b;
+  padding: 20px;
+}
+
+.title__contact-form {
+  font-family: "Vollkorn", serif;
+}
+
+/* Footer */
+
+.footer {
+  padding: 20px;
+  background-color: #080827;
+  color: #c5c5dd;
+  font-family: "Rubik", sans-serif;
+}
+
+.email__footer {
+  font-size: 2.5em;
+  color: white;
+}
+.addresses {
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.address__footer {
+  font-style: initial;
+  font-weight: lighter;
+}
+
+/* Pages */
+
+.page-hero {
+  padding: 20px;
+  font-family: "Rubik", sans-serif;
+  background-color: #e1e5e8;
+}
+.title__page-hero {
+  font-family: "Vollkorn", serif;
+  font-size: 3em;
+  color: #002d5b;
+}
+.path__page-hero {
+  color: #eb5c52;
+}
+
+/* colores gris #E1E5E8 
+salmon #EB5C52  
+rosadito-card #FFF3F4
+azul-fuente #002D5B 
+negro-fuente #000A2D 
+negro-footer #080827
+fuente-footer #C5C5DD
+font-family: 'Vollkorn', serif;
+font-family: 'Rubik', sans-serif;
+footer-background #080827
+*/
+
+.header__menu-desktop {
   text-decoration: none;
   font-family: sans-serif;
 }

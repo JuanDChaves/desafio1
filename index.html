@@ -5,31 +5,77 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home | Haris Watson</title>
-
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
     />
     <link rel="stylesheet" href="/css/index.css" />
     <script defer src="./index.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Vollkorn:ital,wght@0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <div class="header__container"></div>
+    <header class="header">
+      <!-- <meta name="viewport" content="width=device-width, user-scalable=no" />
+      <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+      />
+      <link rel="stylesheet" href="/components/header/header.css" />
+      <script defer src="/components/header/header.js"></script> -->
+      <img src="/images/logo.jpg" alt="logo" class="logo__header" />
+      <nav class="header__menu-desktop">
+        <ul>
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="/pages/about.html">About</a></li>
+          <li><a href="/pages/services.html">Services</a></li>
+          <li><a href="/pages/portfolio.html">Portfolio</a></li>
+          <li><a href="/pages/contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <button class="header__button-desktop">Get free consultant</button>
+      <i class="fas fa-bars header__menu-icon"></i>
+      <nav class="header__menu-mobile">
+        <ul>
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="/pages/about.html">About</a></li>
+          <li><a href="/pages/services.html">Services</a></li>
+          <li><a href="/pages/portfolio.html">Portfolio</a></li>
+          <li><a href="/pages/contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
     <section class="home-hero">
-      <h1>GET EVERY SINGLE SOLUTION.</h1>
-      <h2>I'm Designer Harris F. Watson</h2>
-      <p>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique ipsa
-        quaerat harum nemo velit nisi sapiente. Quam corrupti dicta quod nulla
-        ut quis quae fugiat officiis, sit incidunt, fuga itaque.
-      </p>
-      <button class="learn-more-button">Learn More</button>
-      <button class="hire-me-button">Hire Me</button>
-      <img src="" alt="A Harris' Photograph" class="harris-photo" />
+      <div class="text__home-hero">
+        <p class="motto__home-hero">GET EVERY SINGLE SOLUTION.</p>
+        <h1 class="title__home-hero">I'm Designer Harris F. Watson</h1>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique
+          ipsa quaerat harum nemo velit nisi sapiente. Quam corrupti dicta quod
+          nulla ut quis quae fugiat officiis, sit incidunt, fuga itaque.
+        </p>
+        <div class="buttons__hero">
+          <button class="learn-more-button">Learn More</button>
+          <button class="hire-me-button">Hire Me</button>
+        </div>
+      </div>
+      <div class="harris-image">
+        <img src="" alt="A Harris' Photograph" class="harris-photo" />
+      </div>
     </section>
     <section class="mission">
-      <div class="aboutme">
-        <h2>Design With Passion While Expliring The World</h2>
+      <div class="aboutme__mission">
+        <h2 class="title__aboutme-mission">
+          Designing With Passion While Expliring The World
+        </h2>
         <p>
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque
           recusandae architecto excepturi, iure sunt officiis, soluta eum et
@@ -42,36 +88,59 @@
           vero obcaecati sint magnam numquam nemo rerum doloribus, ea pariatur?
         </p>
       </div>
-      <div>
-        <h2>Any Type of Query & Discussion.</h2>
+      <div class="contact__mission">
+        <h2 class="title__contact-mission">Any Type of Query & Discussion.</h2>
         <p>Talk With Me hire@somesite.com</p>
         <img src="" alt="Arrow to the Unkown" />
       </div>
     </section>
     <section class="services">
-      <h2>What Services Will You Get From Me!</h2>
-      <div class="service-card">UI/UX Design</div>
-      <div class="service-card">Digital Marketing</div>
-      <div class="service-card">Website Design</div>
+      <h2 class="title__services">What Services Will You Get From Me!</h2>
+      <div class="cards__services">
+        <div class="service-card">
+          <h3 class="card-title">UI/UX Design</h3>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe
+            magni a hic recusandae ratione ad necessitatibus quod obcaecati
+            totam. Dicta
+          </p>
+        </div>
+        <div class="service-card">
+          <h3 class="card-title">Digital Marketing</h3>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe
+            magni a hic recusandae ratione ad necessitatibus quod obcaecati
+            totam. Dicta
+          </p>
+        </div>
+        <div class="service-card">
+          <h3 class="card-title">Website Design</h3>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe
+            magni a hic recusandae ratione ad necessitatibus quod obcaecati
+            totam. Dicta
+          </p>
+        </div>
+      </div>
     </section>
     <section class="portfolio">
-      <h2>What Services Will You Get From Me!</h2>
+      <h2 class="title__porfolio">What Services Will You Get From Me!</h2>
       <div class="gallery">
         <img src="" alt="Little Menu" />
-        <img src="" alt="Picture 1" />
-        <img src="" alt="Picture 2" />
-        <img src="" alt="Picture 3" />
-        <img src="" alt="Picture 4" />
-        <img src="" alt="Picture 5" />
-        <img src="" alt="Picture 6" />
+        <img src="" alt="Picture 1" class="picture__portfolio" />
+        <img src="" alt="Picture 2" class="picture__portfolio" />
+        <img src="" alt="Picture 3" class="picture__portfolio" />
+        <img src="" alt="Picture 4" class="picture__portfolio" />
+        <img src="" alt="Picture 5" class="picture__portfolio" />
+        <img src="" alt="Picture 6" class="picture__portfolio" />
       </div>
     </section>
     <section class="contact-me">
       <h2>Feel Free To Contact Me</h2>
-      <button class="contact-me-button">Contact Me Now</button>
+      <button class="button__contact-me">Contact Me Now</button>
     </section>
     <section class="feedback">
-      <h2>Some Positive Feedback That Encourage Us</h2>
+      <h2 class="title__feedback">Some Positive Feedback That Encourage Us</h2>
       <div class="feedback-card">Bradley Ericson 1</div>
       <div class="feedback-card">Bradley Ericson 2</div>
       <div class="feedback-card">Bradley Ericson 3</div>
@@ -85,7 +154,7 @@
       </div>
     </section>
     <section class="contact-form">
-      <h2>Let's Work Together!</h2>
+      <h2 class="title__contact-form">Let's Work Together!</h2>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum dolores
         sequi soluta dolorum saepe, natus expedita aperiam ab quidem aliquam
@@ -95,6 +164,30 @@
       <img src="" alt="Signature" />
       <form action="input">Full Name</form>
     </section>
-    <div class="header__footer">Footer</div>
+    <footer class="footer">
+      <div class="addresses">
+        <img src="/images/logo.jpg" alt="logo" class="logo__footer" />
+        <e-mail class="email__footer">hireme@portfolio.com</e-mail>
+        <address class="address__footer">
+          221B Baker Street, PO Box 353 <br />
+          Park Road, USA - 215431
+        </address>
+      </div>
+      <p>2021 All Rights Reserved.</p>
+      <div class="social-media">
+        <h4>Stay Conected</h4>
+        <ul class="social-media">
+          <li>
+            <a href=""><img src="" alt="Tweeter" /></a>
+          </li>
+          <li>
+            <a href=""><img src="" alt="Facebook" /></a>
+          </li>
+          <li>
+            <a href=""><img src="" alt="Instagram" /></a>
+          </li>
+        </ul>
+      </div>
+    </footer>
   </body>
 </html>

@@ -1,18 +1,18 @@
-const headerContainer = document.querySelector(".header__container");
+// const headerContainer = document.querySelector(".header__container");
 
-function callHTML() {
-  fetch("/components/header/index.html")
-    .then(function (res) {
-      res.text().then(function (texto) {
-        headerContainer.innerHTML = texto;
-      });
-    })
-    .catch(function () {
-      console.error("Hubo un error!");
-    });
-}
+// function callHTML() {
+//   fetch("/components/header/index.html")
+//     .then(function (res) {
+//       res.text().then(function (texto) {
+//         headerContainer.innerHTML = texto;
+//       });
+//     })
+//     .catch(function () {
+//       console.error("Hubo un error!");
+//     });
+// }
 
-callHTML();
+// callHTML();
 
 // Header
 
