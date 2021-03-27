@@ -7,12 +7,12 @@ p {
 
 /* Titles */
 
-.title1 {
+/* .title1 {
 }
 .title2 {
 }
 .title3 {
-}
+} */
 /* Header */
 
 .header {
@@ -154,9 +154,9 @@ p {
   display: flex;
   justify-content: space-evenly;
 }
-.harris-image {
-  border: solid 1px #777;
-}
+/* .harris-image {
+
+} */
 
 /* about */
 
@@ -210,6 +210,18 @@ p {
 }
 .gallery {
   display: grid;
+  grid-template-columns: repeat(3, 350px);
+  grid-template-rows: repeat(3, 350px);
+  column-gap: 20px;
+  row-gap: 20px;
+  padding: 40px 30px;
+}
+.big-picture__gallery {
+  grid-column-start: 1;
+  grid-column-end: span 2;
+  grid-row-start: 1;
+  grid-row-end: span 2;
+  width: 100%;
 }
 .picture__portfolio {
   border: solid 1px #e1e5e8;
